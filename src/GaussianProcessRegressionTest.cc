@@ -82,7 +82,7 @@ int  main(int argc, char** argv)
   cxxopts::Options cmdopt("libgpr","test program for libgpr library");
   cmdopt.add_options()
     ("i,input",      "csv input  file name",                          cxxopts::value<std::string>())
-    ("o,output",     "csv output file name",                          cxxopts::value<std::string>()->default_value("out.data"))
+    ("o,output",     "csv output file name",                          cxxopts::value<std::string>()->default_value("out.dat"))
     ("u,upsampling", "upsampling factor" ,                            cxxopts::value<double>()->default_value("10.0"))
     ("n,noise",      "{true, false } GPR model for noisy observations and  noise free observations",
                                                                       cxxopts::value<bool>()->default_value("true"))
