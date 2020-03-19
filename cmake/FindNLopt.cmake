@@ -41,7 +41,7 @@ find_library(NLOPT_LIBRARIES
 # Static libraries
 if (PC_NLOPT_LIBDIR AND NLOPT_LIBRARIES)
     set(NLOPT_LIB_NAME libnlopt)
-    set(NLOPT_STATIC ${PC_NLOPT_LIBDIR}/${NLOPT_LIB_NAME}.lib)
+    set(NLOPT_STATIC ${PC_NLOPT_LIBDIR}/${NLOPT_LIB_NAME}.a)
 endif()
 
 # Version
